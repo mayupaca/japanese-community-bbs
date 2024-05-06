@@ -8,21 +8,24 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
+import { ThreadData } from "@/app/types/types";
 
-const Thread = () => {
+interface ThreadDataProps {
+  threadData: ThreadData;
+}
+
+const Thread = ({ threadData }: ThreadDataProps) => {
+  const { id, title, content, createdAt, username } = threadData;
+
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Create project</CardTitle>
-        <CardDescription>Deploy your new project in one-click.</CardDescription>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{username}</CardDescription>
       </CardHeader>
-      <CardContent>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit,
-        recusandae adipisci alias debitis nisi enim deserunt sed vel quibusdam
-        hic esse rerum sint sequi autem rem assumenda nobis! Soluta, quidem.
-      </CardContent>
+      <CardContent>{content}</CardContent>
       <CardFooter className="flex justify-between">
-        <Link href={"/posts/1"} className="text-green-500">
+        <Link href={`/thread/${id}`} className="text-green-500">
           Read more
         </Link>
       </CardFooter>

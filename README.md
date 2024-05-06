@@ -5,6 +5,8 @@
 - Typescript
 - TailwindCSS
 - shadcn/ui
+- Supabase
+- Prisma
 
 
 

@@ -1,13 +1,14 @@
 # Japanese Community BBS Canada
+カナダに住む人・カナダに興味のある人のためのみんなにやさしい掲示板アプリ
+A user-friendly bulletin board app for people living in Canada or interested in Canada
 
-## Tech
-- Next.js
-- Typescript
-- TailwindCSS
-- shadcn/ui
-- Supabase
-- Prisma
-
+### Tech Stack
+- Next.js: Building server-side rendered pages.
+- TypeScript: Enforcing type safety in the codebase.
+- TailwindCSS: Styling components and layouts.
+- shadcn/ui: Creating reusable and consistent UI components.
+- Supabase: Managing database and user authentication.
+- Prisma: Handling database
 
 
 <!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
